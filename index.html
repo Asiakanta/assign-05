@@ -87,7 +87,7 @@
             <button class="w-1/2 btn px-10 rounded-lg text-[#5c5c5c99]">
               <i class="fa-copy"></i> Copy
             </button>
-            <button
+            <button onclick="makeCall('Emergency Number','999')"
               class="call-btn w-1/2 btn px-10 rounded-lg text-white bg-[#00A63E]"
             >
               <i class="fa-solid fa-phone-volume"></i>Call
@@ -117,7 +117,7 @@
             <button class="w-1/2 btn px-10 rounded-lg text-[#5c5c5c99]">
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button
+            <button onclick="makeCall('Police','999')"
               class="call-btn w-1/2 btn px-10 rounded-lg text-white bg-[#00A63E]"
             >
               <i class="fa-solid fa-phone-volume"></i>Call
@@ -145,7 +145,7 @@
             <button class="w-1/2 btn px-10 rounded-lg text-[#5c5c5c99]">
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button
+            <button onclick="makeCall('Fire Service','999')"
               class="call-btn w-1/2 btn px-10 rounded-lg text-white bg-[#00A63E]"
             >
               <i class="fa-solid fa-phone-volume"></i>Call
@@ -175,7 +175,7 @@
             <button class="w-1/2 btn px-10 rounded-lg text-[#5c5c5c99]">
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button
+            <button onclick="makeCall('Ambulance Service','1994-999999')"
               class="call-btn w-1/2 btn px-10 rounded-lg text-white bg-[#00A63E]"
             >
               <i class="fa-solid fa-phone-volume"></i>Call
@@ -203,7 +203,7 @@
             <button class="w-1/2 btn px-10 rounded-lg text-[#5c5c5c99]">
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button
+            <button onclick="makeCall('Women & Child Helpline','109')"
               class="call-btn w-1/2 btn px-10 rounded-lg text-white bg-[#00A63E]"
             >
               <i class="fa-solid fa-phone-volume"></i>Call
@@ -231,7 +231,7 @@
             <button class="w-1/2 btn px-10 rounded-lg text-[#5c5c5c99]">
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button
+            <button onclick="makeCall('Anti-Corruption','106')"
               class="call-btn w-1/2 btn px-10 rounded-lg text-white bg-[#00A63E]"
             >
               <i class="fa-solid fa-phone-volume"></i>Call
@@ -261,7 +261,7 @@
             <button class="w-1/2 btn px-10 rounded-lg text-[#5c5c5c99]">
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button
+            <button onclick="makeCall('Electricity Helpline','16216')"
               class="call-btn w-1/2 btn px-10 rounded-lg text-white bg-[#00A63E]"
             >
               <i class="fa-solid fa-phone-volume"></i>Call
@@ -289,7 +289,7 @@
             <button class="w-1/2 btn px-10 rounded-lg text-[#5c5c5c99]">
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button
+            <button onclick="makeCall('Brac Helpline','16445')"
               class="call-btn w-1/2 btn px-10 rounded-lg text-white bg-[#00A63E]"
             >
               <i class="fa-solid fa-phone-volume"></i>Call
@@ -319,7 +319,7 @@
             <button class="w-1/2 btn px-10 rounded-lg text-[#5c5c5c99]">
               <i class="fa-solid fa-copy"></i> Copy
             </button>
-            <button
+            <button onclick="makeCall('Bangladesh Railway','163')"
               class="call-btn w-1/2 btn px-10 rounded-lg text-white bg-[#00A63E]"
             >
               <i class="fa-solid fa-phone-volume"></i>Call
@@ -329,12 +329,20 @@
       </div>
 
       <!-- call history section -->
-
-      <div class="w-1/4 bg-white p-5 rounded-lg flex justify-between mt-5">
-        <p class="font-bold"><i class="fa-regular fa-clock"></i>Call History</p>
-        <button class="btn px-10 rounded-3xl text-white bg-[#00A63E]">
-          Clear
-        </button>
+      <div class="w-1/4 mt-5 bg-white p-5 rounded-lg">
+        <div id="history" class="flex justify-between">
+          <p class="font-bold">
+            <i class="fa-regular fa-clock"></i>Call History
+          </p>
+          
+          <button onclick="clearHistory()" class="btn clear-btn px-10 rounded-3xl text-white bg-[#00A63E]">
+            Clear
+          </button>
+        </div>
+        <div id="history-list" class="mt-10">
+          
+          </div>
+        </div>
       </div>
     </div>
     <script src="./assign.js"></script>
